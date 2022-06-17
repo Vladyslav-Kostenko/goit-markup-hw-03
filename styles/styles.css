@@ -1,0 +1,194 @@
+/* colors */
+:root {
+    --primary-text-color: #212121;
+    --secondary-text-color: #FFFFFF;    
+    --additional-text-color: #757575;
+
+    --accent-color: #2196F3;
+
+    --primary-page-color: #FFFFFF;
+    --secondary-page-color: #2F303A;
+    --additional-page-color: #F5F4FA;
+
+    --first-stroke-color: #ECECEC;
+    --second-stroke-color: #EEEEEE;
+}
+
+/* preset */
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: var(--primary-text-color);
+}
+
+a :visited {
+    color: var(--primary-text-color);
+}
+
+/*main page*/
+body {
+    font-family: 'Roboto';
+    font-weight: 400;
+    letter-spacing: 0.03em;
+}
+
+.main {
+    background-color: var(--primary-page-color);
+    color: var(--primary-text-color);
+}
+
+/* body styles */
+header {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.15;
+    letter-spacing: 0.02em;
+}
+
+.logo {
+    font-family: 'Raleway';
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.2;
+}
+
+header .name-part-2 {
+    color: var(--primary-text-color);
+}
+
+.name-part-1 {
+    color: var(--accent-color);
+}
+
+.navigation :hover {
+    color: var(--accent-color);
+}
+
+.navigation .current {
+    color: var(--accent-color);
+}
+
+.mail,
+.tel {
+    color: var(--additional-text-color);
+    font-weight: 500;
+}
+
+.mail:hover,
+.tel:hover,
+.mail:focus .tel:focus {
+    color: var(--accent-color);
+}
+
+.idea {
+    background-color: var(--secondary-page-color);
+    color: var(--secondary-text-color);
+}
+
+.tagline {
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.6;
+    text-transform: uppercase;
+}
+
+.order-button {
+    background-color: var(--accent-color);
+    color: var(--secondary-text-color);
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 2;
+    letter-spacing: 0.06em
+}
+
+.features .header {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.15;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+}
+
+.features .text {
+    color: var(--additional-text-color);
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+.examples .header,
+.team .header {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+}
+
+.team {
+    background-color: var(--additional-page-color);
+    font-size: 16px;
+    line-height: 1.2;
+}
+
+.team .name {
+    font-weight: 500;
+}
+
+.position {
+    color: var(--additional-text-color);
+}
+
+/* footer */
+footer {
+    background-color: var(--secondary-page-color);
+    color: var(--secondary-text-color);
+}
+
+footer .name-part-2 {
+    color: var(--secondary-text-color);
+}
+
+footer .mail,
+footer .tel {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.company-info {
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+address {
+    font-style: normal;
+}
+
+/* porfolio page */
+.filters button {
+    background-color: var(--additional-page-color);
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.65;
+    letter-spacing: 0.03em;
+}
+
+.filters button:hover,
+.filters button:focus {
+    background-color: var(--accent-color);
+    color: var(--secondary-text-color);
+}
+
+.project-name {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+}
+
+.project-type {
+    color: var(--additional-text-color);
+    font-size: 16px;
+    line-height: 2;
+}
