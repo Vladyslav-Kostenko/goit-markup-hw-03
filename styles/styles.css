@@ -60,7 +60,7 @@ body {
     letter-spacing: 0.03em;
 }
 
-.main-container {
+.container {
     width: 1200px;
     padding-left: 15px;
     padding-right: 15px;
@@ -93,6 +93,8 @@ header {
     font-size: 26px;
     line-height: 1.2;
     margin-right: 90px;
+    padding-bottom: 25px;
+    padding-top: 25px;
 }
 
 header .name-part-2 {
@@ -113,6 +115,13 @@ header .name-part-2 {
 
 .navigation-list {
     display: flex;
+}
+
+.navigation-list .link,
+.header-info .link {
+    display: block;
+    padding-bottom: 32px;
+    padding-top: 32px;
 }
 
 .navigation-list > .item:not(:last-child) {
@@ -147,7 +156,7 @@ header .mail {
 .idea {
     padding-top: 200px;
     padding-bottom: 200px;
-    margin-bottom: 95px;
+    margin-bottom: 94px;
     text-align: center;
     background-color: var(--secondary-page-color);
     color: var(--secondary-text-color);    
@@ -173,7 +182,7 @@ header .mail {
 
 .features,
 .examples {
-    margin-bottom: 95px;
+    padding-bottom: 94px;
 }
 
 .features-list {
@@ -219,8 +228,8 @@ header .mail {
 }
 
 .team {
-    padding-top: 100px;
-    padding-bottom: 100px;
+    padding-top: 94px;
+    padding-bottom: 94px;
     background-color: var(--additional-page-color);
     font-size: 16px;
     line-height: 1.2;
@@ -270,9 +279,9 @@ address {
 }
 
 /* porfolio page */
-.portfolio .header-container,
 .portfolio .main-content {
-    margin-bottom: 95px;
+    padding-top: 94px;
+    padding-bottom: 94px;
 }
 
 .filters-list {
@@ -294,6 +303,7 @@ address {
     letter-spacing: 0.03em;
     border-radius: 5px;
     border: 0;
+    padding: 6px 22px;
 }
 
 .filters button:hover,
@@ -318,6 +328,12 @@ address {
 .projects-list .item {
     width: 370px;
     border: 1px solid var(--second-stroke-color);
+}
+
+.projects-list .text-padding {
+    padding-top: 30px;
+    padding-bottom: 30px;    
+    padding-left: 30px;
 }
 
 .project-name {
