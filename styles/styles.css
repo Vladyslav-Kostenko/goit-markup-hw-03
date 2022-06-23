@@ -77,7 +77,6 @@ body {
 .header-container {
     display: flex;
     align-items: center;
-    border: 1px solid var(--first-stroke-color);
 }
 
 header {
@@ -87,14 +86,21 @@ header {
     letter-spacing: 0.02em;
 }
 
+.portfolio header {
+    border: 1px solid var(--first-stroke-color);
+}
+
 .logo {
     font-family: 'Raleway';
     font-weight: 700;
     font-size: 26px;
     line-height: 1.2;
-    margin-right: 90px;
+}
+
+header .logo {
     padding-bottom: 25px;
     padding-top: 25px;
+    margin-right: 90px;
 }
 
 header .name-part-2 {
@@ -156,7 +162,6 @@ header .mail {
 .idea {
     padding-top: 200px;
     padding-bottom: 200px;
-    margin-bottom: 94px;
     text-align: center;
     background-color: var(--secondary-page-color);
     color: var(--secondary-text-color);    
@@ -171,6 +176,9 @@ header .mail {
 }
 
 .order-button {
+    padding: 10px 32px;
+    border-radius: 5px;
+    border: 0;
     background-color: var(--accent-color);
     color: var(--secondary-text-color);
     cursor: pointer;
@@ -180,9 +188,13 @@ header .mail {
     letter-spacing: 0.06em
 }
 
-.features,
-.examples {
+.features {
+    padding-top: 94px;
     padding-bottom: 94px;
+}
+
+.features .header {
+    margin-bottom: 10px;
 }
 
 .features-list {
@@ -191,11 +203,11 @@ header .mail {
 }
 
 .features-list > li {
-    width: 240px;
+    width: 270px;
 }
 
 .features-list > li:not(:last-child) {
-    margin-right: 70px;
+    margin-right: 30px;
 }
 
 .features .header {
@@ -210,6 +222,10 @@ header .mail {
     color: var(--additional-text-color);
     font-size: 14px;
     line-height: 1.7;
+}
+
+.examples {
+    padding-bottom: 94px;
 }
 
 .examples .header,
@@ -227,6 +243,11 @@ header .mail {
     justify-content: space-between;
 }
 
+.team-list .item {
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+}
+
 .team {
     padding-top: 94px;
     padding-bottom: 94px;
@@ -235,12 +256,18 @@ header .mail {
     line-height: 1.2;
 }
 
+.team .description {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
 .team .name,
 .team .position {
     text-align: center;
 }
 
 .team .name {
+    margin-bottom: 10px;
     font-weight: 500;
 }
 
@@ -256,6 +283,11 @@ footer {
     color: var(--secondary-text-color);
 }
 
+footer .logo {
+    display: block;
+    margin-bottom: 20px;
+}
+
 footer .name-part-2 {
     color: var(--secondary-text-color);
 }
@@ -265,13 +297,17 @@ footer .tel {
     color: rgba(255, 255, 255, 0.6);
 }
 
-.company-info > .tel {
+.company-info .tel {
     display: block;
 }
 
 .company-info {
     font-size: 14px;
     line-height: 1.7;
+}
+
+.company-info > .item:not(:last-child) {
+    margin-bottom: 9px;
 }
 
 address {
@@ -297,7 +333,7 @@ address {
 .filters button {
     background-color: var(--additional-page-color);
     cursor: pointer;
-    font-weight: 700;
+    font-weight: 500;
     font-size: 16px;
     line-height: 1.65;
     letter-spacing: 0.03em;
@@ -331,9 +367,7 @@ address {
 }
 
 .projects-list .text-padding {
-    padding-top: 30px;
-    padding-bottom: 30px;    
-    padding-left: 30px;
+    padding: 20px 24px;
 }
 
 .project-name {
